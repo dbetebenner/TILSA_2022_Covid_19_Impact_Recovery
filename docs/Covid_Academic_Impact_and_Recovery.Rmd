@@ -1,0 +1,452 @@
+---
+title: "COVID-19 Academic Impact and Recovery"
+subtitle: "Conceptualization and Implementation"
+author: "Damian Betebenner"
+institute: "Center for Assessment"
+date: >- 
+  June 30th, 2022<br>CCSSO TILSA 2022<br>Summer Meeting
+
+   ```{r, github-corner, echo=FALSE, results='asis'}
+     cat(cfaDocs:::makeOctoCat(
+       link='https://dbetebenner.github.io/TILSA_2022_Covid_19_Impact_Recovery/docs/Covid_Academic_Impact_and_Recovery.Rmd'))
+   ```
+output:
+  cfaDocs::cfaXaringan:
+    include: !expr list(
+      footer = 'default',
+      footer_text = '<a class=\"footer\" href=\"https://dbetebenner.github.io/TILSA_2022_Covid_19_Impact_Recovery\">COVID-19 Academic Impact and Recovery</a>',
+      xaringanExtra = 'default',
+      xExtra_use = c('share_again', 'tile_view', 'clipboard'))
+
+
+---
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r share-again, echo=FALSE}
+xaringanExtra::use_share_again()
+```
+
+```{r style-share-again, echo=FALSE}
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter"),
+  background = "#009C49",
+  foreground = "#FFFFFF"
+)
+```
+
+```{r xaringan-logo, echo=FALSE}
+xaringanExtra::use_logo(
+  image_url = "https://centerforassessment.github.io/assets/favicon.png",
+  width = "55px",
+  height = "64px",
+  position = xaringanExtra::css_position(top = "0.5em", right = "0.5em"),
+  link_url = "https://www.nciea.org"
+)
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+```{r xaringanExtra-clipboard, echo=FALSE}
+xaringanExtra::use_clipboard()
+```
+
+```{r metadata, echo=FALSE}
+# creating HTML metadata to accompany the slides
+library(metathis)
+meta() %>%
+  meta_general(
+    description = "Presentation on COVID-19 Academic Impact and Recovery given as part of CCSSO TILSA Summer 2022 Meeting, Atlanta Georgia",
+    subject = "COVID-19 Academic Impact and Recovery",
+    generator = "xaringan and remark.js",
+    theme_color = "#b6e202"
+  ) %>% 
+  meta_name("github-repo" = "dbetebenner/TILSA_2022_Covid_19_Impact_Recovery") %>% 
+  meta_social(
+    title = "COVID-19 Academic Impact and Recovery • CCSSO TILSA Summer 2022 • Damian Betebenner",
+    url = "https://dbetebenner.github.io/TILSA_2022_Covid_19_Impact_Recovery/Covid_Academic_Impact_and_Recovery",
+    image = "https://github.com/dbetebenner/TILSA_2022_Covid_19_Impact_Recovery/raw/main/docs/Figures/TITLE_SLIDE_image.png",
+    image_alt = "Title slide for COVID-19 Academic Impact and Recovery presentation",
+    og_type = "article",
+    og_locale = "en_US",
+    og_author = "Damian Betebenner",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@dbetebenner",
+    twitter_site = "@NCIEA1"
+  )
+```
+
+---
+class: inverse, center, middle
+
+# Conceptualizing Impact & Recovery 
+
+---
+
+# What is "academic impact"?
+
+--
+
+- The pandemic and all the ensuing disruptions functioned/functions as an “academic headwind”, impeding (in general) the academic progress of students.
+
+--
+
+- Headwinds impede progress in two ways:
+
+--
+
+    1. They slow one’s rate of progress (speedometer)
+    2. And by slowing one’s rate of progress they lead to less distance being travelled (odometer).
+
+--
+
+- In education these two impediments manifest as:
+
+--
+
+    1. Decrease in student growth (i.e. decrease in velocity = deceleration).
+    2. Decrease in student attainment.
+
+---
+
+# Learning Deceleration/Acceleration
+
+--
+
+- Summarization of assessment data (either for diagnostic or accountability purposes) emphasizes two types of data results: Status (i.e. student attainment) and Growth (i.e., student academic progress)
+
+--
+
+- With the pandemic, emaphasis has changed to look at _academic impact_
+
+--
+
+- We emphasize that Impact is synonymous with _decleration_ and Recovery is synonymous with _acceleration_
+
+--
+
+- Deceleration, by definition, is the change in velocity (i.e. growth)
+
+--
+
+- Improvement (increasing student attainment/status in a system over time) is indicative of acceleration (unless the population is changing leading to the increased attainment/status)
+
+
+---
+class: center, middle
+
+### [Focusing State Educational Accountability Systems: Four Methods of Judging School Quality and Progress](https://www.nciea.org/sites/default/files/publications/Dale020402.pdf)
+
+```{r echo=FALSE, out.width="60%", fig.align="center"}
+magick::image_read_pdf("Figures/Carlson_Four_Quadrant_Figure.pdf")
+```
+
+---
+
+# COVID-19 Academic Impact
+
+--
+
+- Discussion of academic impact requires the consideration of a counterfactual:
+
+--
+
+#### <span style="color: red;">Where would student(s) have been had the pandemic not occurred?</span>.
+
+
+--
+
+- The impact to student attainment and student growth frame the two primary types of analyses that will be discussed
+
+--
+
+    1. Academic Impact as it relates to change (i.e. decrease) in student attainment
+    2. Academic Impact as it relates to change (i.e., decrease) in student growth
+
+---
+
+# Data for Analyses
+
+--
+
+- States drew primarily upon their large scale assessment data to investigate academic impact
+
+--
+
+    - State summative assessment data given in grade 3 to 8 in ELA and Mathematics
+    - State English Language Proficiency (ELP) assessment data (e.g., WIDA-ACCESS) given in grades K to 12
+
+---
+
+# Academic Impact Validity Threats
+
+--
+
+- Student particition: Participation in states varied greatly. Several states reported normal participation (> 95%) while others had participation well below 50%.
+
+--
+
+- Pandemic impact on student test-taking motivation.
+
+--
+
+- Test adminstration modality
+
+--
+
+- No evidence of differential test-taking motivation pre-pandemic to pandemic.
+
+
+
+---
+
+# Status based analyses of academic impact
+
+--
+
+- Change in status (i.e. attainment): Compare the status of a pre-pandemic students with students in during/after the pandemic.
+
+--
+
+    - States compare same grade/content area performance from 2019 to 2021 (e.g., Grade 5 math in 2019 with Grade 5 math in 2021)
+
+--
+
+- The most common quantity used to communicate change in status is change in percent proficient
+
+--
+
+- Though not "wrong", change in percent proficient (or percent above/below any threshold) is not usually a good measure of central tendency.
+
+--
+
+    - One can also calculate change in mean scale score (standardized, to create an effect size)
+
+
+---
+
+# Status based analysis of academic impact
+
+--
+
+- To refine status based measures of change, we calculate the equi-percentile distributional shift associated with pre-pandemic and pandemic score.
+
+--
+
+#### $$\mbox{Status Impact} \equiv (\mbox{Scale Score}_{2019} - \mbox{Scale Score}_{2021} | \mbox{Percentile Rank})$$
+
+--
+
+- We created a custom graphics class in R to help illustrate this
+
+
+---
+class: center, middle
+
+```{r echo=FALSE , out.width="80%", fig.align="center"}
+magick::image_read_pdf("Figures/Status_5_Mathematics.pdf")
+```
+
+---
+class: center, middle
+
+```{r echo=FALSE, out.width="80%", fig.align="center"}
+magick::image_read_pdf("Figures/Status_5_Mathematics_Difference.pdf")
+```
+
+---
+
+# Growth based analysis of academic impact
+
+--
+
+- States analyzed utilize Student Growth Percentiles (SGPs) as its growth model
+
+--
+
+- SGPs used by states are "norm-referenced",  utilizing fresh growth norms each year
+
+--
+
+- To investigate academic impact, baseline growth norms (i.e., coefficient matrices) were calculated:
+
+--
+
+    - Baseline coefficient matrices utilized 2016, 2017 and 2019 to accomodate skip-year growth
+    - WIDA-ACCESS coefficient matrices utilized 2018 and 2019.
+
+--
+
+- The extent to which median/mean SGPs in 2021 deviate below 50 is indicative of deceleration (i.e., slow down in student learning)
+
+---
+class: center, middle
+
+```{r echo=FALSE, out.width="80%", fig.align="center"}
+magick::image_read_pdf("Figures/Growth_5_Mathematics.pdf")
+```
+
+---
+class: center, middle
+
+```{r echo=FALSE, out.width="80%", fig.align="center"}
+magick::image_read_pdf("Figures/Growth_5_Mathematics_Difference.pdf")
+```
+
+---
+
+# Categorization of Impact
+
+--
+
+- __Severe:__ $\mbox{Growth Impact} \leq -25$ or $\mbox{Status Impact} \leq -0.4$.
+- __Large:__ $-25 < \mbox{Growth Impact} \leq -15$ or $-0.4 < \mbox{Status Impact} \leq -0.25$.
+- __Moderate:__ $-15 < \mbox{Growth Impact} \leq -5$ or $-0.25 < \mbox{Status Impact} \leq -0.1$.
+- __Modest to None:__ $-5 < \mbox{Growth Impact} \leq 5$ or $-0.1 < \mbox{Status Impact} \leq 0.05$.
+- __Improvement:__ $\mbox{Growth Impact} > 5$ or $\mbox{Status Impact} > 0.05$.
+
+
+---
+class: center, middle
+
+```{r echo=FALSE}
+magick::image_read_pdf("Figures/Academic_Impact_ELA_Grade_5.pdf")
+```
+
+---
+class: center, middle
+
+```{r echo=FALSE}
+magick::image_read_pdf("Figures/Academic_Impact_ELA_Grade_6.pdf")
+```
+
+---
+class: center, middle
+
+```{r echo=FALSE}
+magick::image_read_pdf("Figures/Academic_Impact_ELA_Grade_7.pdf")
+```
+
+---
+class: center, middle
+
+```{r echo=FALSE}
+magick::image_read_pdf("Figures/Academic_Impact_ELA_Grade_8.pdf")
+```
+
+---
+class: center, middle
+
+```{r echo=FALSE}
+magick::image_read_pdf("Figures/Academic_Impact_Mathematics_Grade_8.pdf")
+```
+
+---
+class: center, middle
+
+```{r echo=FALSE}
+magick::image_read_pdf("Figures/Academic_Impact_Mathematics_Grade_8.pdf")
+```
+
+---
+# Summarization of Academic Impact Across Content Area and Grade
+
+--
+
+- The vast amounts of data makes it difficult for users to grasp who and to what extent academic impact is occurring
+
+--
+
+- We created another graphic class in R to help summarize this vast amount of data across content area and subgropup
+
+
+---
+class: center, middle
+
+```{r echo=FALSE}
+magick::image_read_pdf("Figures/Academic_Impact_Overview_Overall_Hybrid.pdf")
+```
+
+---
+class: center, middle
+
+```{r echo=FALSE}
+magick::image_read_pdf("Figures/Academic_Impact_Overview_Quintile_1_Hybrid.pdf")
+```
+
+---
+class: center, middle
+
+```{r echo=FALSE}
+magick::image_read_pdf("Figures/Academic_Impact_Overview_Quintile_2_Hybrid.pdf")
+```
+
+---
+class: center, middle
+
+```{r echo=FALSE}
+magick::image_read_pdf("Figures/WIDA_ACCESS/Academic_Impact_Overview_Overall_Hybrid.pdf")
+```
+
+---
+class: center, middle
+
+```{r echo=FALSE}
+magick::image_read_pdf("Figures/WIDA_ACCESS/Academic_Impact_Overview_Quintile_1_Hybrid.pdf")
+```
+
+---
+class: center, middle
+
+```{r echo=FALSE}
+magick::image_read_pdf("Figures/WIDA_ACCESS/Academic_Impact_Overview_Quintile_2_Hybrid.pdf")
+```
+
+---
+
+
+# Across state views of academic impact
+
+- The Center for Assessment worked with about a dozen states on understand pandemic related academic impact
+
+--
+
+- Applying the same set of analyses to all states allows us to help individual states see their impact and impact on student subgroups against other states.
+
+
+---
+class: center, middle
+
+```{r echo=FALSE}
+magick::image_read_pdf("Figures/Academic_Impact_Overview_Overall_COMPILATION_Indiana_Hybrid_ALL_STUDENTS_ANONYMIZED.pdf")
+```
+
+---
+class: center, middle
+
+```{r echo=FALSE}
+magick::image_read_pdf("Figures/Academic_Impact_Overview_Quintile_1_COMPILATION_Indiana_Hybrid_ALL_STUDENTS_ANONYMIZED.pdf")
+```
+
+---
+
+# Summary
+
+--
+
+- Data from 2021 State assessments was successfully marshaled to investigate COVID-19 related academic impact
+
+--
+
+- No evidence of test invaldity was detected to undermine the analyses
+
+--
+
+- Academic impact results were summarized across grade, content area, demographic, academic subgroups and districts to help stakeholders in Indiana identify who and to what extent students were academically impact by the pandemic
+
+--
+
+- Data from 2022 state assessments will be used in the coming weeks to investigate whether and the extent to which students are recovering academically from the pandemic related losses.
