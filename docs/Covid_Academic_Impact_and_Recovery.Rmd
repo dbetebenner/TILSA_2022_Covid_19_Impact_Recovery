@@ -154,7 +154,7 @@ magick::image_read_pdf("Figures/Carlson_Four_Quadrant_Figure.pdf")
 
 --
 
-#### <span style="color: red;">Where would student(s) have been had the pandemic not occurred?</span>.
+#### <center><span style="color: red;">Where would student(s) have been had the pandemic not occurred?</span></center>
 
 
 --
@@ -421,14 +421,14 @@ magick::image_read_pdf("Figures/WIDA_ACCESS/Academic_Impact_Overview_Quintile_2_
 class: center, middle
 
 ```{r echo=FALSE, out.width="80%", fig.align="center"}
-magick::image_read_pdf("Figures/Academic_Impact_Overview_Overall_COMPILATION_Indiana_Hybrid_ALL_STUDENTS_ANONYMIZED.pdf")
+magick::image_read_pdf("Figures/Academic_Impact_Overview_Overall_COMPILATION_Hybrid_ANONYMIZED.pdf")
 ```
 
 ---
 class: center, middle
 
 ```{r echo=FALSE, out.width="80%", fig.align="center"}
-magick::image_read_pdf("Figures/Academic_Impact_Overview_Quintile_1_COMPILATION_Indiana_Hybrid_ALL_STUDENTS_ANONYMIZED.pdf")
+magick::image_read_pdf("Figures/Academic_Impact_Overview_Quintile_1_COMPILATION_Hybrid_ANONYMIZED.pdf")
 ```
 
 ---
