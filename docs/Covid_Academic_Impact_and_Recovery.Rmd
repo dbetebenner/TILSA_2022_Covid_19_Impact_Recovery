@@ -4,7 +4,7 @@ subtitle: "Conceptualization and Implementation"
 author: "Damian Betebenner"
 institute: "Center for Assessment"
 date: >- 
-  June 30th, 2022<br>CCSSO TILSA 2022<br>Summer Meeting
+  June 30th, 2022<br>CCSSO ASR-TILSA 2022<br>Summer Meeting
 
    ```{r, github-corner, echo=FALSE, results='asis'}
      cat(cfaDocs:::makeOctoCat(
