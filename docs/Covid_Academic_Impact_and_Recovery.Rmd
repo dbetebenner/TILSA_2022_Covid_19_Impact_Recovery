@@ -8,7 +8,7 @@ date: >-
 
    ```{r, github-corner, echo=FALSE, results='asis'}
      cat(cfaDocs:::makeOctoCat(
-       link='https://dbetebenner.github.io/TILSA_2022_Covid_19_Impact_Recovery/docs/Covid_Academic_Impact_and_Recovery.Rmd'))
+       link='https://github.com/dbetebenner/TILSA_2022_Covid_19_Impact_Recovery/blob/main/docs/Covid_Academic_Impact_and_Recovery.Rmd'))
    ```
 output:
   cfaDocs::cfaXaringan:
